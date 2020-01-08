@@ -6,3 +6,6 @@ class Student(models.Model):
     name = models.TextField(max_length=40)
     stud_class = models.TextField()
     department = models.TextField()
+
+    def __str__(self):
+        return self.name
